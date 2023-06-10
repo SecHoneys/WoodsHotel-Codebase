@@ -1,0 +1,429 @@
+/* =========================================== CONFIGURAÇÃO DE FONTE NO WEBSITE =========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+/* =========================================== CONFIGURAÇÃO PADROZINADO NO WEBSITE =========================================== */
+:root {
+    --primary: #0077b6;
+    --secondary: #48cae4;
+    --black: #333;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    background-color: #341d08;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+section {
+    padding: 5rem 7%;
+}
+
+.heading {
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: #41240a;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #341d08;
+}
+
+/* =========================================== BARRA DE NAVEGAÇÃO NO WEBSITE =========================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #341d08;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.header .logo i {
+    color: white;
+    padding-right: .5rem;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: white;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--primary);
+}
+
+.header .navbar .btn {
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover {
+    color: var(--white);
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover {
+    color: var(--primary);
+}
+
+form {
+    display: flex;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 199px;
+    background-color: #41240a;
+    color: white;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #482403;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================================== FIM BARRA DE NAVEGAÇÃO =========================================== */
+
+
+/* =========================================== APRESENTAÇÃO DO WEBSITE =========================================== */
+
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.home .slide .content {
+    width: 80rem;
+    text-align: center;
+}
+
+.home .slide .content h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 1.1;
+    padding: 2rem 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: #41240a;
+    color: white;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: #341d08;
+    color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+/* =========================================== FIM APRESENTAÇÃO DO WEBSITE =========================================== */
+
+/* =========================================== DISPONIBILIDADE NO HOTEL ===========================================  */
+
+.availability form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: #41240a;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.availability form .box {
+    flex: 1 1 20rem;
+}
+
+.availability form .box p {
+    font-size: 2rem;
+    color: white;
+}
+
+.availability form .box .input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+/* =========================================== FIM DISPONIBILIDADE NO HOTEL ===========================================  */
+
+/* =========================================== SOBRE O HOTEL ===========================================  */
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+
+.about .row .image {
+    flex: 1 1 30rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 51rem;
+}
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: white;
+    padding: 2rem 0;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-family: 'Kanit', 'Poppins', sans-serif;
+}
+
+/* =========================================== FIM SOBRE O HOTEL ===========================================  */
+
+
+/* =========================================== COMEÇO DO FOOTER  =========================================== */
+
+.footer {
+    background: #41240a;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box a {
+    font-size: 1.6rem;
+    display: block;
+    color: white;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: white;
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+    color: #0077b6;
+}
+
+.footer .share {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a {
+    color: white;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .share a:hover {
+    color: white;
+    background: var(--primary);
+    transform: rotate(360deg);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.footer .credit span {
+    color: var(--primary);
+}
+
+/* =========================================== FIM COMEÇO DO FOOTER  =========================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content {
+        width: 50rem;
+    }
+
+    .review .review-slider {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 15%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home .slide .content {
+        width: 30rem;
+    }
+
+    .home .slide .content h3 {
+        font-size: 3rem;
+    }
+
+}

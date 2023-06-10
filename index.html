@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ============== LINK DO CDN DO FONT AWESOME ==================== -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- ============== LINK DO CDN DO SWIPER JS ==================== -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <!-- ============== LINK DO CSS PERSONALIZADO ==================== -->
+   <link rel="stylesheet" href="src/css/main.css">
+   <!-- ============== TIUTLO DO WEBSITE ====================-->
+   <title>Woody’s hotel</title>
+</head>
+<body>
+   <!-- ============================ BARRA DE NAVEGAÇÃO ============================ -->
+   <header class="header">
+      <a href="#" class="logo">Woody’s hotel</a>
+
+      <nav class="navbar">
+         <a href="#">MENU</a>
+         <a href="#">SOBRE</a>
+         <a href="#">CONTATO</a>
+         <a href="#">QUARTOS</a>
+         <a href="#">LOGIN</a>
+      </nav>
+
+      <form>
+         <input type="text" name="search" placeholder="Pesquisar">
+         <input  class="buscar" type="submit" value="Buscar">
+      </form>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </header>
+   <!-- ============================ FIM DE BARRA DE NAVEGAÇÃO ============================ -->
+
+   <!-- ============================ COMEÇO DE APRESENTAÇÃO WEBSITE ============================ -->
+   <section class="home" id="home">
+      <div class="swiper home-slider">
+         <div class="swiper-wrapper">
+         <!-- =============================== PARTE DO SLIDE 01 =============================== -->
+            <div class="swiper-slide slide" style="background: url(src/img/apresent/home-slide1.png) no-repeat;">
+               <div class="content">
+                  <h3>Descubra um mundo de possibilidades</h3>
+                  <a href="#" class="btn"> Descubra nossas opções</a>
+               </div>
+            </div>
+         <!-- =============================== PARTE DO SLIDE 02 =============================== -->
+            <div class="swiper-slide slide" style="background: url(src/img/apresent/home-slide2.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Conectando pessoas, ideias e soluções</h3>
+                  <a href="#" class="btn"> Descubra nossas opções</a>
+               </div>
+            </div>
+         <!-- =============================== PARTE DO SLIDE 03 =============================== -->
+            <div class="swiper-slide slide" style="background: url(src/img/apresent/home-slide3.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Transformando sua visão em realidade.</h3>
+                  <a href="#" class="btn"> Descubra nossas opções</a>
+               </div>
+            </div>
+         <!-- =============================== PARTE DO SLIDE 04 =============================== -->
+            <div class="swiper-slide slide" style="background: url(src/img/apresent/home-slide4.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Simplicidade e eficiência para sua vida.</h3>
+                  <a href="#" class="btn"> Descubra nossas opções</a>
+               </div>
+            </div>
+         <!-- =============================== FIM DO SLIDE =============================== -->
+         </div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+      </div>
+   </section>
+   <!-- ============================ FIM COMEÇO DE APRESENTAÇÃO WEBSITE ============================ -->
+
+   <!-- ============================ DISPONIBILIDADE NO HOTEL =============================================== -->
+   <section class="availability">
+      <form action="">
+
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>Adultos <span>*</span></p>
+            <select name="adults" id="" class="input">
+               <option value="1">1 adulto</option>
+               <option value="2">2 adultos</option>
+               <option value="3">3 adultos</option>
+               <option value="4">4 adultos</option>
+               <option value="5">5 adultos</option>
+               <option value="6">6 adultos</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Crianças <span>*</span></p>
+            <select name="child" id="" class="input">
+               <option value="1">1 Criança</option>
+               <option value="2">2 Crianças</option>
+               <option value="3">3 Crianças</option>
+               <option value="4">4 Crianças</option>
+               <option value="5">5 Crianças</option>
+               <option value="6">6 Crianças</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Quartos <span>*</span></p>
+            <select name="rooms" id="" class="input">
+               <option value="1">1 Quarto</option>
+               <option value="2">2 Quartos</option>
+               <option value="3">3 Quartos</option>
+               <option value="4">4 Quartos</option>
+               <option value="5">5 Quartos</option>
+               <option value="6">6 Quartos</option>
+            </select>
+         </div>
+
+         <input type="submit" value="check availability" class="btn">
+      </form>
+   </section>
+   <!-- ============================ FIM DISPONIBILIDADE NO HOTEL =============================================== -->
+
+   <!-- ============================ SOBRE O HOTEL =============================================== -->
+   <section class="about" id="about">
+      <div class="row">
+         <!-- =========================== LOGO ===========================-->
+         <div class="image">
+            <img src="src/img/logo/logo.png" alt="">
+         </div>
+         <!-- =========================== QUEM SOMOS =========================== -->
+         <div class="content">
+            <h3>Quem somos</h3>
+            <p>Localizado em Curitiba, somos um renomado hotel 5 estrelas, oferecendo o máximo em conforto e sofisticação. Nosso compromisso é proporcionar aos nossos hóspedes uma estadia inesquecível, com serviços e instalações de primeira classe.</p>
+            <p>Com uma localização privilegiada, estamos no coração da cidade, cercados por atrações culturais, restaurantes premiados e uma vibrante vida noturna. Nossas acomodações luxuosas e meticulosamente projetadas garantem o descanso perfeito após um dia explorando a cidade.</p>
+            <p>Nossa equipe dedicada e altamente capacitada está pronta para superar suas expectativas. Oferecemos uma variedade de comodidades e serviços exclusivos, desde um spa relaxante até experiências gastronômicas requintadas em nosso restaurante premiado.</p>
+            <p>Estamos comprometidos com a excelência em cada detalhe. Nossos hóspedes desfrutam de um atendimento personalizado e de uma atmosfera acolhedora que os fazem se sentir em casa. Seja para uma viagem de negócios ou uma escapada romântica, estamos aqui para tornar sua estadia verdadeiramente memorável.</p>
+            <p>Venha desfrutar da perfeita combinação de luxo, conforto e hospitalidade no nosso hotel 5 estrelas em Curitiba. Seja bem-vindo ao nosso mundo de excelência."</p>
+         </div>
+      </div>
+   </section>
+   <!-- ============================ FIM SOBRE O HOTEL ============================-->
+
+   <!-- ============================ FOOTER DO WEBSITE ============================ -->
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>Informações de contato</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +55 (41) 93259-5542</a>
+            <a href="#"> <i class="fas fa-phone"></i> +55 (11) 92569-2532</a>
+            <a href="#"> <i class="fas fa-envelope"></i> Woodyscontact@gmail.com.br</a>
+            <a href="#"> <i class="fas fa-map"></i> Centro, Curitiba 999</a>
+         </div>
+
+         <div class="box">
+            <h3>Links Rápidos</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Menu</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Sobre</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Contato</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Quartos</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Login</a>
+         </div>
+
+         <div class="box">
+            <h3>Links extras</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Politica de reembolso</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Cancelamento de quarto</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Segurança</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Trabalhe com nos</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Serviço de limpeza</a>
+         </div>
+
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fa-brands fa-whatsapp"></a>
+      </div>
+
+      <div class="credit">&copy; copyright @ 2023 by <span>Woody’s</span></div>
+
+   </section>
+
+   <!-- ============================ FIM DO FOOTER ============================ -->
+
+   <!-- ============================ JAVASCRIPT ============================ -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="src/js/main.js"></script>
+</body>
+</html>
