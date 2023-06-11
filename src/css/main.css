@@ -176,10 +176,9 @@ form {
 	position: absolute;
 	top: 115%;
 	right: -105%;
-	background-color: var(--white);
+	background-color: white;
 	box-shadow: .5rem;
 	width: 35rem;
-	box-shadow: var(--box-shadow);
 	padding: 2rem;
 }
 
@@ -201,7 +200,7 @@ form {
 	margin: .7rem 0;
 	border: 0.1rem solid rgba(0, 0, 0, 0.1);
 	padding: 1rem 1.2rem;
-	color:  white;
+	color:  black;
 	text-transform: none;
 	width: 100%;
 }
@@ -229,7 +228,7 @@ form {
 	font-weight: 700;
 	text-transform: uppercase;
 	max-width: max-content;
-	border: .1rem solid var(--primary-color);
+	border: .1rem solid #482403;
 	background-color: #482403;
     padding: 1.2rem 8.5rem;
     overflow: hidden;
@@ -362,7 +361,7 @@ form {
     width: 100%;
     padding: 1rem;
     font-size: 1.8rem;
-    color: var(--black);
+    color: black;
     margin: 1rem 0;
     border-radius: .5rem;
 }
@@ -476,26 +475,9 @@ form {
 .footer .credit span {
     color: var(--primary);
 }
-
 /* =========================================== FIM COMEÇO DO FOOTER  =========================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries */
+/*  =========================================== media queries =========================================== */
 
 @media (max-width:991px) {
 
