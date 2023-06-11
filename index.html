@@ -21,7 +21,6 @@
       <nav class="navbar">
          <a href="#">MENU</a>
          <a href="#">SOBRE</a>
-         <a href="#">CONTATO</a>
          <a href="#">QUARTOS</a>
          <a href="#">LOGIN</a>
       </nav>
@@ -31,8 +30,29 @@
          <input  class="buscar" type="submit" value="Buscar">
       </form>
 
-      <div id="menu-btn" class="fas fa-bars"></div>
+      <div class="icons">
+         <div class="fas fa-user" id="login-btn"></div>
+         <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+   
+      <form action="" class="login-form">
+         <h3>login form</h3>
+         <input type="email" placeholder="enter your email" class="box">
+         <input type="password" placeholder="enter your password" class="box">
+         <div class="remember">
+            <input type="checkbox" name="" id="remember">
+            <label for="remember-me">remember-me</label>
+         </div>
+         <a href="#" class="btn">
+            <span class="text text-1">login now</span>
+            <span class="text text-2" aria-hidden="true">login now</span>
+         </a>
+      </form>
+
    </header>
+   
+
+
    <!-- ============================ FIM DE BARRA DE NAVEGAÇÃO ============================ -->
 
    <!-- ============================ COMEÇO DE APRESENTAÇÃO WEBSITE ============================ -->
@@ -198,6 +218,8 @@
 
    <!-- ============================ JAVASCRIPT ============================ -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="src/js/main.js"></script>
+   <script src="src/js/login.js"></script>
 </body>
 </html>
