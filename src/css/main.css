@@ -162,6 +162,11 @@ input[type="submit"] {
 /* =========================================== FIM BARRA DE NAVEGAÇÃO =========================================== */
 
 /* =========================================== LOGIN WEBSITE =========================================== */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .header .icons div {
 	font-size: 2.5rem;
 	margin-left: 1.7rem;
@@ -191,11 +196,12 @@ input[type="submit"] {
 .header .login-form.active {	
 	right: 2rem;
 	transition: .4s linear;
+    background-color: #41240a;
 }
 
 .header .login-form h3 {
 	font-size: 2.2rem;
-	color: var(--black);
+	color:  white;
 	text-align: center;
 	margin-bottom: 0.7rem;
 }
@@ -205,7 +211,7 @@ input[type="submit"] {
 	margin: .7rem 0;
 	border: 0.1rem solid rgba(0, 0, 0, 0.1);
 	padding: 1rem 1.2rem;
-	color: var(--black);
+	color:  white;
 	text-transform: none;
 	width: 100%;
 }
@@ -219,8 +225,73 @@ input[type="submit"] {
 
 .header .login-form .remember label {
 	font-size: 1.5rem;
-	color: var(--black);
+	color: white;
 	cursor: pointer;
+}
+
+
+.btns {
+    position: relative;
+	display: inline-block;
+	margin-top: 1rem;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	max-width: max-content;
+	border: .1rem solid var(--primary-color);
+	background-color: #482403;
+    padding: 1.2rem 8.5rem;
+    overflow: hidden;
+	z-index: 1;
+	border-radius: .5rem;
+}
+
+.btns::before {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	background-color: #341d08;
+	transition: 500ms ease;
+	z-index: -1;
+}
+
+.btns .text {
+	transition: 250ms ease;
+}
+
+.btns .text-2 {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: scaleX(-50%);
+	min-width: max-content;
+	color: var(--secondary);
+}
+
+.btns:is(:hover, :focus-visible)::before {
+	bottom: -50%;
+}
+
+.btns:is(:hover, :focus-visible) .text-1 {
+	transform: translateY(-4rem);
+}
+
+.btns:is(:hover, :focus-visible) .text-2 {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.regi {
+    font-size: 1.5rem;
+	color: white;
+	cursor: pointer;
+    padding-left: 104px;
 }
 
 /* =========================================== FIM LOGIN WEBSITE =========================================== */
@@ -305,6 +376,7 @@ input[type="submit"] {
     margin: 1rem 0;
     border-radius: .5rem;
 }
+
 
 /* =========================================== FIM DISPONIBILIDADE NO HOTEL ===========================================  */
 

@@ -101,14 +101,14 @@ accordions.forEach(acco =>{
     }
 })
 ///////////////////////////////////////////////////////////////////////////////////////////
-document.querySelector('#menu-btn').onclick = () => {
+document.querySelector('#logins').onclick = () => {
 	navbar.classList.toggle('active');
 	loginForm.classList.remove('active');
 }
 
 let loginForm = document.querySelector('.login-form');
 
-document.querySelector('#login-btn').onclick = () => {
+document.querySelector('#logins').onclick = () => {
 	loginForm.classList.toggle('active');
 	navbar.classList.remove('active');
 }
