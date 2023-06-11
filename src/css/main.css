@@ -167,16 +167,6 @@ form {
     flex-wrap: wrap;
 }
 
-.header .icons div {
-	font-size: 2.5rem;
-	margin-left: 1.7rem;
-	color: var(--black);
-	cursor: pointer;
-}
-
-.header .icons div:hover {
-	color: var(--primary-color);
-}
 
 #menu-btn {
 	display: none;
@@ -533,7 +523,7 @@ form {
         box-shadow: var(--box-shadow);
         background: var(--white);
         border-radius: .5rem;
-        z-index: 1200;
+        background: #41240a;
     }
 
     .header .navbar.active {
@@ -557,6 +547,26 @@ form {
         padding-top: 15%;
     }
 
+    input[type="text"] {
+        padding: -1px;
+        width: 101px;
+        background-color: #41240a;
+        color: white;
+    }
+    
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #482403;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: white;
+    }
 }
 
 @media (max-width: 450px) {
