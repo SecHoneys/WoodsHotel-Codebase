@@ -396,6 +396,90 @@ form {
 .btn-login:hover {
     background-color: #482403;
 }
+
+.task1 {
+    display: flex;
+    padding-right: 10px;
+    font-size: 15px;
+    padding-top: 7px;
+    color: white;
+    font-weight: 600;
+}
+
+.task1:hover{
+    color: #0077b6;
+}
+
+.task2:hover{
+    color: #0077b6;
+}
+
+.task2 {
+    display: flex;
+    font-size: 15px;
+    padding-top: 7px;
+    color: white;
+    font-weight: 600;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  }
+  
+  .popup {
+    background-color: #fff;
+    max-width: 1292px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    max-height: 576px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem interna quando necessário */
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .popup .close:hover {
+    color: #000;
+  }
+
+  .policy-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .policy-list {
+    list-style-type: decimal;
+    margin-left: 10px;
+    padding-left: 4px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .li1 {
+    font-family: 'Kanit', sans-serif;
+  }
+
 /* =========================================== FIM CADASTRO  WEBSITE =========================================== */
 
 
