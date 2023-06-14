@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ============== LINK DO CDN DO FONT AWESOME ==================== -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- ============== LINK DO CDN DO SWIPER JS ==================== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <!-- ============== LINK DO CSS PERSONALIZADO ==================== -->
+        <link rel="stylesheet" href="src/css/cadastro.css">
+        <!-- ============== TIUTLO DO WEBSITE ====================-->
+        <title>Woody’s hotel | Cadastro</title>
+     </head>
+</head>
+<body>
+    <!-- ============================ BARRA DE NAVEGAÇÃO ============================ -->
+   <header class="header">
+    <a href="#" class="logo">Woody’s hotel</a>
+
+    <nav class="navbar">
+       <a href="../index.html">MENU</a>
+       <a href="#">SOBRE</a>
+       <a href="#">QUARTOS</a>
+       <a href="#" id="logins">LOGIN</a>
+    </nav>
+
+    <form>
+       <input type="text" name="search" placeholder="Pesquisar">
+       <input  class="buscar" type="submit" value="Buscar">
+    </form>
+
+    <div class="fas fa-bars" id="menu-btn"></div>
+
+    
+    <form action="" class="login-form">
+       <h3>Entrar na conta</h3>
+       <input type="email" placeholder="Entrar com seu email" class="box">
+       <input type="password" placeholder="Entrar com sua senha" class="box">
+       <div class="remember">
+          <input type="checkbox" name="" id="remember">
+          <label for="remember-me">Lembre-se</label>
+          <a href="cadastro.html" class="regi">Registra-se</a>
+       </div>
+       <a href="#" class="btns">
+          <span class="text text-1">Entrar</span>
+       </a>>
+    </form>
+ </header>
+ <!-- ============================ FIM BARRA DE NAVEGAÇÃO ============================ -->
+
+
+ <div class="boxshadow">
+    <legend>Dados da Reserva</legend>
+    <label for="identrada">Data Entrada:<input type="date" name="identrada" id="identrada" size="6"  placeholder="ddmmaaaa" required /></label>
+    <label for="idsaida">Data Saida:<input type="date" name="idsaida" id="idsaida" size="6"  placeholder="ddmmaaaa"required /></label><br>
+    <label for="idadultos">Adultos:<input type="number" name="idadultos" id="idadultos"  size="2" min="1"  required /></label>
+    <label for="idcriancas">Crianças:<input type="number" name="idcriancas" id="idcriancas" size="2" min="0" required /></label>
+    <p><input type="submit" value="gerar protocolo"></p>
+ </div>
+
+     <!-- ============================ FIM DO FOOTER ============================ -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../src/js/main.js"></script>
+
+</body>
