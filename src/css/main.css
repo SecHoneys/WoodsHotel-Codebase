@@ -424,7 +424,7 @@ form {
 }
 
 .reservar {
-    background-color: green;
+    background-color: #482403;
     border: none;
     padding: 3px 10px;
     font-size: 16px;
@@ -433,6 +433,11 @@ form {
     color: aliceblue;
 }
 
+.reservar:hover {
+    right: 2rem;
+    transition: .4s linear;
+    background-color: #381e06;
+}
 /* =========================================== FIM MOSTRANDO OS QUARTOS NO WEBSITE  =========================================== */
 
 /* =========================================== DISPONIBILIDADE NO HOTEL ===========================================  */
@@ -688,6 +693,10 @@ form {
         cursor: pointer;
     }
 
+    .image {
+        display: none;
+    }
+    
     .header .logo {
         font-size: 1.5rem;
         font-weight: bolder;
@@ -698,23 +707,35 @@ form {
         text-align: center;
         overflow: hidden;
         transition: transform 0.5s;
-        width: 200px;
+        width: 401px;
+        padding-left: 71px;
+        padding-top: 23px;
     }
     .imagem2 {
         margin-left: 10px;
         text-align: center;
         overflow: hidden;
         transition: transform 0.5s;
-        width: 200px;
+        width: 401px;
+        padding-left: 71px;
+        padding-top: 23px;
     }
     .imagem3 {
         margin-left: 10px;
         text-align: center;
         overflow: hidden;
         transition: transform 0.5s;
-        width: 200px;
+        width: 401px;
+        padding-left: 71px;
+        padding-top: 23px;
     }
+
+    .imagem4 {
+        padding-top: 23px;
+    }
+
     .quartos {
+        flex-direction: column;
         display: flex;
         justify-content: center;
     }
