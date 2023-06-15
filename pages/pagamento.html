@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============== LINK DO CDN DO FONT AWESOME ==================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- ============== LINK DO CDN DO SWIPER JS ==================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- ============== LINK DO CSS PERSONALIZADO ==================== -->
+    <link rel="stylesheet" href="src/css/pagamento.css">
+    <!-- ============== TIUTLO DO WEBSITE ====================-->
+    <title>Woody’s hotel</title>
+</head>
+
+<body>
+    <!-- ============================ BARRA DE NAVEGAÇÃO ============================ -->
+    <header class="header">
+        <a href="#" class="logo">Woody’s hotel</a>
+
+        <nav class="navbar">
+            <a href="../index.html">MENU</a>
+            <a href="../index.html">SOBRE</a>
+            <a href="../index.html">QUARTOS</a>
+            <a href="#" id="logins">LOGIN</a>
+        </nav>
+
+        <form>
+            <input  class="search" type="text" name="search" placeholder="Pesquisar">
+            <input class="buscars" type="submit" value="Buscar">
+        </form>
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+
+        <form action="" class="login-form">
+            <h3>Entrar na conta</h3>
+            <input type="email" placeholder="Entrar com seu email" class="box">
+            <input type="password" placeholder="Entrar com sua senha" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember">
+                <label for="remember-me">Lembre-se</label>
+                <a href="pages/cadastro.html" class="regi">Registra-se</a>
+            </div>
+            <a href="#" class="btns">
+                <span class="text text-1">Entrar</span>
+            </a>>
+        </form>
+    </header>
+    <!-- ============================ PAGAMENTO FOLHA ============================ -->
+
+    <div class="container">
+        <h1>Pagamento e Reservas</h1>
+        <form id="payment-form" onsubmit="generateConfirmationCode(event)">
+          <label for="card">Dados do Cartão:</label>
+          <input class="texts" type="text" id="card" placeholder="Número do cartão" required>
+          <label for="cvv">CVV:</label>
+          <input class="texts" type="text" id="cvv" placeholder="CVV" required>
+          <label for="expiry">Data de Validade:</label>
+          <input class="texts" type="text" id="expiry" placeholder="MM/AA" required>
+          <label for="amount">Valor do Quarto:</label>
+          <input class="texts" type="number" id="amount" placeholder="Valor em R$" required>
+          <label for="checkin">Check-in:</label>
+          <input class="texts" type="date" id="checkin" required>
+          <label for="checkout">Check-out:</label>
+          <input class="texts" type="date" id="checkout" required>
+          <label for="hotel">Modalidade de Quarto:</label>
+          <select id="hotel" required>
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+          </select>
+    
+          <div class="payment-methods">
+            <label>
+              <input type="radio" name="payment-method" value="credit-card" checked onchange="toggleInstallments()">
+              Cartão de Crédito Parcelado (até 10x sem juros)
+            </label>
+            <div class="installments-wrapper" id="installments-wrapper">
+              <table class="installments-table">
+                <thead>
+                  <tr>
+                    <th>Número de Parcelas</th>
+                    <th>Valor da Parcela</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1x</td>
+                    <td><span id="installment-1"></span></td>
+                  </tr>
+                  <tr>
+                    <td>2x</td>
+                    <td><span id="installment-2"></span></td>
+                  </tr>
+                  <tr>
+                    <td>3x</td>
+                    <td><span id="installment-3"></span></td>
+                  </tr>
+                  <tr>
+                    <td>4x</td>
+                    <td><span id="installment-4"></span></td>
+                  </tr>
+                  <tr>
+                    <td>5x</td>
+                    <td><span id="installment-5"></span></td>
+                  </tr>
+                  <tr>
+                    <td>6x</td>
+                    <td><span id="installment-6"></span></td>
+                  </tr>
+                  <tr>
+                    <td>7x</td>
+                    <td><span id="installment-7"></span></td>
+                  </tr>
+                  <tr>
+                    <td>8x</td>
+                    <td><span id="installment-8"></span></td>
+                  </tr>
+                  <tr>
+                    <td>9x</td>
+                    <td><span id="installment-9"></span></td>
+                  </tr>
+                  <tr>
+                    <td>10x</td>
+                    <td><span id="installment-10"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <label>
+              <input type="radio" name="payment-method" value="credit-card-single" onchange="toggleInstallments()">
+              Cartão de Crédito à Vista
+            </label>
+            <label>
+              <input type="radio" name="payment-method" value="debit-card" onchange="toggleInstallments()">
+              Débito
+            </label>
+            <label>
+              <input type="radio" name="payment-method" value="boleto" onchange="toggleInstallments()">
+              Boleto
+            </label>
+            <label>
+              <input type="radio" name="payment-method" value="pix" onchange="toggleInstallments()">
+              PIX
+            </label>
+          </div>
+    
+          <input type="submit" class="submit-button" value="Confirmar Cobrança">
+        </form>
+    <div id="confirmation-code" class="confirmation-code"></div>
+    
+
+    <!-- ============================ FIM DO FOOTER ============================ -->
+
+    <!-- ============================ JAVASCRIPT ============================ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../src/js/main.js"></script>
+    <script src="src/js/pagamento.js"></script>
+</body>
+
+</html>

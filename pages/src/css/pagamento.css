@@ -1,7 +1,7 @@
 /* =========================================== CONFIGURAÇÃO DE FONTE NO WEBSITE =========================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* =========================================== CONFIGURAÇÃO PADROZINADO NO WEBSITE =========================================== */
 :root {
@@ -10,6 +10,10 @@
     --black: #333;
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+body * {
+    box-sizing: border-box;
 }
 
 * {
@@ -145,14 +149,14 @@ form {
     display: flex;
 }
 
-input[type="text"] {
+.search {
     padding: 10px;
     width: 199px;
     background-color: #41240a;
     color: white;
 }
 
-input[type="submit"] {
+.buscars {
     padding: 10px 20px;
     background-color: #482403;
     color: white;
@@ -286,229 +290,138 @@ form {
 
 /* =========================================== FIM LOGIN WEBSITE =========================================== */
 
+/* =========================================== COMEÇO DE PAGAMENTO =========================================== */
 
-/* =========================================== APRESENTAÇÃO DO WEBSITE =========================================== */
-
-.home {
-    padding: 0;
-}
-
-.home .slide {
-    min-height: 100vh;
-    background-size: cover !important;
-    background-position: center !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-}
-
-.home .slide .content {
-    width: 80rem;
-    text-align: center;
-}
-
-.home .slide .content h3 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: var(--white);
-    line-height: 1.1;
-    padding: 2rem 0;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    background: #41240a;
-    color: white;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    background: #341d08;
-    color: var(--white);
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    font-size: 2rem;
-}
-
-/* =========================================== FIM APRESENTAÇÃO DO WEBSITE =========================================== */
-
-/* =========================================== MOSTRANDO OS QUARTOS NO WEBSITE  =========================================== */
-
-.quartos {
-    display: flex;
-    justify-content: center;
-
-}
-
-.cama1 {
-    border-radius: 10%;
-}
-
-.imagem1 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.5s;
-}
-
-.imagem1:hover {
-    transform: scale(1.05);
-    border-radius: 10%;
-}
-
-
-
-.cama2 {
-    border-radius: 10%;
-}
-
-.imagem2 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.imagem2:hover {
-    transform: scale(1.05);
-}
-
-.cama3 {
-    border-radius: 10%;
-
-}
-
-.imagem3 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.imagem3:hover {
-    transform: scale(1.05);
-}
-
-
-
-.cama4 {
-    border-radius: 10%;
-}
-
-.imagem4 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.imagem4:hover {
-    transform: scale(1.05);
-}
-
-
-
-.quartos h1 {
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
-}
-
-.quartos p {
-    color: aliceblue;
-}
-
-.reservar {
-    background-color: #482403;
-    border: none;
-    padding: 3px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6%;
-    color: aliceblue;
-}
-
-.reservar:hover {
-    right: 2rem;
-    transition: .4s linear;
-    background-color: #381e06;
-}
-/* =========================================== FIM MOSTRANDO OS QUARTOS NO WEBSITE  =========================================== */
-
-/* =========================================== DISPONIBILIDADE NO HOTEL ===========================================  */
-
-.availability form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    background: #41240a;
+.container {
+    max-width: 600px;
+    margin: 120px auto 0;
     padding: 2rem;
-    border-radius: .5rem;
-}
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-.availability form .box {
-    flex: 1 1 20rem;
-}
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
 
-.availability form .box p {
-    font-size: 2rem;
-    color: white;
-}
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 
-.availability form .box .input {
+  input[class="texts"],
+  input[class="texts"],
+  select,
+  input[class="texts"] {
     width: 100%;
-    padding: 1rem;
-    font-size: 1.8rem;
-    color: black;
-    margin: 1rem 0;
-    border-radius: .5rem;
-}
-
-
-/* =========================================== FIM DISPONIBILIDADE NO HOTEL ===========================================  */
-
-/* =========================================== SOBRE O HOTEL ===========================================  */
-
-.about .row {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+ 
+  .calendar {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 6rem;
-}
+    margin: -0.25rem;
+  }
 
-.about .row .image {
-    flex: 1 1 30rem;
-}
+  .calendar .day {
+    flex: 0 0 calc(100% / 7);
+    padding: 0.25rem;
+    text-align: center;
+  }
 
-.about .row .image img {
+  .calendar .day input[type="checkbox"] {
+    display: none;
+  }
+
+  .calendar .day input[type="checkbox"] + label {
+    display: block;
+    padding: 0.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+
+  .calendar .day input[type="checkbox"]:checked + label {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+  .submit-button {
     width: 100%;
-}
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-.about .row .content {
-    flex: 1 1 51rem;
-}
+  .submit-button:hover {
+    background-color: #45a049;
+  }
 
-.about .row .content h3 {
-    font-size: 3.5rem;
-    color: white;
-    padding: 2rem 0;
-}
+  .confirmation-code {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    font-size: 1rem;
+  }
 
-.about .row .content p {
-    font-size: 1.6rem;
-    color: white;
-    padding: 1rem 0;
-    line-height: 1.8;
-    font-family: 'Kanit', 'Poppins', sans-serif;
-}
+  .payment-methods {
+    margin-top: 1rem;
+  }
 
-/* =========================================== FIM SOBRE O HOTEL ===========================================  */
+  .payment-methods label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
 
+  .payment-methods input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+
+  .installments-table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .installments-table th,
+  .installments-table td {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .installments-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .installments-table td {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .installments-wrapper {
+    display: none;
+  }
+
+  .installments-wrapper.open {
+    display: block;
+  }
+
+/* =========================================== FIM COMEÇO DE PAGAMENTO =========================================== */
 
 /* =========================================== COMEÇO DO FOOTER  =========================================== */
 
@@ -628,6 +541,43 @@ form {
 
 /*  =========================================== media queries =========================================== */
 
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 91%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 91%;
+        height: auto;
+        padding-top: 17px
+    }
+
+    .left-login-image {
+        width: 50vw;
+        padding-top: 117px
+    }
+
+    .card-login {
+        width: 100%;
+        height: 94%;
+    }
+}
+
 @media (max-width:991px) {
 
     html {
@@ -678,77 +628,22 @@ form {
         padding-top: 15%;
     }
 
-    input[type="text"] {
-        padding: -1px;
-        width: 101px;
-        background-color: #41240a;
-        color: white;
+    input[class="texts"],
+    input[class="texts"],
+    select,
+    input[class="texts"] {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
     }
 
-    input[type="submit"] {
-        padding: 10px 20px;
-        background-color: #482403;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-
-    .image {
-        display: none;
-    }
-    
     .header .logo {
         font-size: 1.5rem;
         font-weight: bolder;
         color: white;
-    }
-    .imagem1 {
-        margin-left: 10px;
-        text-align: center;
-        overflow: hidden;
-        transition: transform 0.5s;
-        width: 401px;
-        padding-left: 71px;
-        padding-top: 23px;
-    }
-    .imagem2 {
-        margin-left: 10px;
-        text-align: center;
-        overflow: hidden;
-        transition: transform 0.5s;
-        width: 401px;
-        padding-left: 71px;
-        padding-top: 23px;
-    }
-    .imagem3 {
-        margin-left: 10px;
-        text-align: center;
-        overflow: hidden;
-        transition: transform 0.5s;
-        width: 401px;
-        padding-left: 71px;
-        padding-top: 23px;
-    }
-
-    .imagem4 {
-        padding-top: 23px;
-    }
-
-    .quartos {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-    }
-    .quartos h1 {
-        color: aliceblue;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .quartos p {
-        color: aliceblue;
-    }
-    .cama1 {
-        border-radius: 10%;
     }
 }
 
