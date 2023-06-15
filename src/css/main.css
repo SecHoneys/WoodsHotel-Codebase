@@ -1,7 +1,6 @@
 /* =========================================== CONFIGURAÇÃO DE FONTE NO WEBSITE =========================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 /* =========================================== CONFIGURAÇÃO PADROZINADO NO WEBSITE =========================================== */
 :root {
@@ -14,14 +13,14 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
 }
 
 html {
@@ -45,27 +44,27 @@ html::-webkit-scrollbar-thumb {
     border-radius: .5rem;
 }
 
-section {
-    padding: 5rem 7%;
+section{
+	padding: 5rem 7%;
 }
 
 
 .heading {
-    position: relative;
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .4rem;
-    text-align: center;
-    margin-bottom: 3rem;
+	position: relative;
+	color: white;
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .4rem;
+	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .heading::after {
-    display: block;
-    width: 10rem;
-    margin-inline: auto;
-    margin-top: -1rem;
+	display: block;
+	width: 10rem;
+	margin-inline: auto;
+	margin-top: -1rem;
 }
 
 .btn {
@@ -170,117 +169,117 @@ form {
 
 
 #menu-btn {
-    display: none;
+	display: none;
 }
 
 .header .login-form {
-    position: absolute;
-    top: 115%;
-    right: -105%;
-    background-color: white;
-    box-shadow: .5rem;
-    width: 35rem;
-    padding: 2rem;
+	position: absolute;
+	top: 115%;
+	right: -105%;
+	background-color: white;
+	box-shadow: .5rem;
+	width: 35rem;
+	padding: 2rem;
 }
 
-.header .login-form.active {
-    right: 2rem;
-    transition: .4s linear;
+.header .login-form.active {	
+	right: 2rem;
+	transition: .4s linear;
     background-color: #41240a;
 }
 
 .header .login-form h3 {
-    font-size: 2.2rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 0.7rem;
+	font-size: 2.2rem;
+	color:  white;
+	text-align: center;
+	margin-bottom: 0.7rem;
 }
 
 .header .login-form .box {
-    font-size: 1.5rem;
-    margin: .7rem 0;
-    border: 0.1rem solid rgba(0, 0, 0, 0.1);
-    padding: 1rem 1.2rem;
-    color: black;
-    text-transform: none;
-    width: 100%;
+	font-size: 1.5rem;
+	margin: .7rem 0;
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	padding: 1rem 1.2rem;
+	color:  black;
+	text-transform: none;
+	width: 100%;
 }
 
 .header .login-form .remember {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    margin: .7rem 0;
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	margin: .7rem 0;
 }
 
 .header .login-form .remember label {
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
+	font-size: 1.5rem;
+	color: white;
+	cursor: pointer;
 }
 
 
 .btns {
     position: relative;
-    display: inline-block;
-    margin-top: 1rem;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    max-width: max-content;
-    border: .1rem solid #482403;
-    background-color: #482403;
+	display: inline-block;
+	margin-top: 1rem;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	max-width: max-content;
+	border: .1rem solid #482403;
+	background-color: #482403;
     padding: 1.2rem 8.5rem;
     overflow: hidden;
-    z-index: 1;
-    border-radius: .5rem;
+	z-index: 1;
+	border-radius: .5rem;
 }
 
 .btns::before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200%;
-    height: 200%;
-    border-radius: 50%;
-    background-color: #341d08;
-    transition: 500ms ease;
-    z-index: -1;
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	background-color: #341d08;
+	transition: 500ms ease;
+	z-index: -1;
 }
 
 .btns .text {
-    transition: 250ms ease;
+	transition: 250ms ease;
 }
 
 .btns .text-2 {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: scaleX(-50%);
-    min-width: max-content;
-    color: var(--secondary);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: scaleX(-50%);
+	min-width: max-content;
+	color: var(--secondary);
 }
 
 .btns:is(:hover, :focus-visible)::before {
-    bottom: -50%;
+	bottom: -50%;
 }
 
 .btns:is(:hover, :focus-visible) .text-1 {
-    transform: translateY(-4rem);
+	transform: translateY(-4rem);
 }
 
 .btns:is(:hover, :focus-visible) .text-2 {
-    top: 50%;
-    transform: translate(-50%, -50%);
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .regi {
     font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
+	color: white;
+	cursor: pointer;
     padding-left: 104px;
 }
 
@@ -337,108 +336,6 @@ form {
 }
 
 /* =========================================== FIM APRESENTAÇÃO DO WEBSITE =========================================== */
-
-/* =========================================== MOSTRANDO OS QUARTOS NO WEBSITE  =========================================== */
-
-.quartos {
-    display: flex;
-    justify-content: center;
-
-}
-
-.cama1 {
-    border-radius: 10%;
-}
-
-.imagem1 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.5s;
-}
-
-.imagem1:hover {
-    transform: scale(1.05);
-    border-radius: 10%;
-}
-
-
-
-.cama2 {
-    border-radius: 10%;
-}
-
-.imagem2 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.imagem2:hover {
-    transform: scale(1.05);
-}
-
-.cama3 {
-    border-radius: 10%;
-
-}
-
-.imagem3 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.imagem3:hover {
-    transform: scale(1.05);
-}
-
-
-
-.cama4 {
-    border-radius: 10%;
-}
-
-.imagem4 {
-    margin-left: 10px;
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.imagem4:hover {
-    transform: scale(1.05);
-}
-
-
-
-.quartos h1 {
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
-}
-
-.quartos p {
-    color: aliceblue;
-}
-
-.reservar {
-    background-color: #482403;
-    border: none;
-    padding: 3px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6%;
-    color: aliceblue;
-}
-
-.reservar:hover {
-    right: 2rem;
-    transition: .4s linear;
-    background-color: #381e06;
-}
-/* =========================================== FIM MOSTRANDO OS QUARTOS NO WEBSITE  =========================================== */
 
 /* =========================================== DISPONIBILIDADE NO HOTEL ===========================================  */
 
@@ -578,53 +475,7 @@ form {
 .footer .credit span {
     color: var(--primary);
 }
-
-/* =========================================== FIM COMEÇO DO FOOTER  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =========================================== FIM COMEÇO DO FOOTER  =========================================== */
 
 /*  =========================================== media queries =========================================== */
 
@@ -684,7 +535,7 @@ form {
         background-color: #41240a;
         color: white;
     }
-
+    
     input[type="submit"] {
         padding: 10px 20px;
         background-color: #482403;
@@ -693,62 +544,13 @@ form {
         cursor: pointer;
     }
 
-    .image {
-        display: none;
-    }
-    
     .header .logo {
         font-size: 1.5rem;
         font-weight: bolder;
         color: white;
     }
-    .imagem1 {
-        margin-left: 10px;
-        text-align: center;
-        overflow: hidden;
-        transition: transform 0.5s;
-        width: 401px;
-        padding-left: 71px;
-        padding-top: 23px;
-    }
-    .imagem2 {
-        margin-left: 10px;
-        text-align: center;
-        overflow: hidden;
-        transition: transform 0.5s;
-        width: 401px;
-        padding-left: 71px;
-        padding-top: 23px;
-    }
-    .imagem3 {
-        margin-left: 10px;
-        text-align: center;
-        overflow: hidden;
-        transition: transform 0.5s;
-        width: 401px;
-        padding-left: 71px;
-        padding-top: 23px;
-    }
-
-    .imagem4 {
-        padding-top: 23px;
-    }
-
-    .quartos {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-    }
-    .quartos h1 {
-        color: aliceblue;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .quartos p {
-        color: aliceblue;
-    }
-    .cama1 {
-        border-radius: 10%;
+    .regi {
+        font-size: 12px;
     }
 }
 
