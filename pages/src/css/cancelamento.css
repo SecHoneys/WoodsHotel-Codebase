@@ -1,0 +1,844 @@
+/* =========================================== CONFIGURAÇÃO DE FONTE NO WEBSITE =========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* =========================================== CONFIGURAÇÃO PADROZINADO NO WEBSITE =========================================== */
+:root {
+    --primary: #0077b6;
+    --secondary: #48cae4;
+    --black: #333;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+body * {
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    background-color: #341d08;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+section{
+	padding: 5rem 7%;
+}
+
+
+.heading {
+	position: relative;
+	color: white;
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .4rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.heading::after {
+	display: block;
+	width: 10rem;
+	margin-inline: auto;
+	margin-top: -1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: #41240a;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #341d08;
+}
+
+/* =========================================== BARRA DE NAVEGAÇÃO NO WEBSITE =========================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #341d08;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.header .logo i {
+    color: white;
+    padding-right: .5rem;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: white;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--primary);
+}
+
+.header .navbar .btn {
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover {
+    color: var(--white);
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover {
+    color: var(--primary);
+}
+
+form {
+    display: flex;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 199px;
+    background-color: #41240a;
+    color: white;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #482403;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================================== FIM BARRA DE NAVEGAÇÃO =========================================== */
+
+/* =========================================== LOGIN WEBSITE =========================================== */
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#menu-btn {
+	display: none;
+}
+
+.header .login-form {
+	position: absolute;
+	top: 115%;
+	right: -105%;
+	background-color: white;
+	box-shadow: .5rem;
+	width: 35rem;
+	padding: 2rem;
+}
+
+.header .login-form.active {	
+	right: 2rem;
+	transition: .4s linear;
+    background-color: #41240a;
+}
+
+.header .login-form h3 {
+	font-size: 2.2rem;
+	color:  white;
+	text-align: center;
+	margin-bottom: 0.7rem;
+}
+
+.header .login-form .box {
+	font-size: 1.5rem;
+	margin: .7rem 0;
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	padding: 1rem 1.2rem;
+	color:  black;
+	text-transform: none;
+	width: 100%;
+}
+
+.header .login-form .remember {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	margin: .7rem 0;
+}
+
+.header .login-form .remember label {
+	font-size: 1.5rem;
+	color: white;
+	cursor: pointer;
+}
+
+
+.btns {
+    position: relative;
+	display: inline-block;
+	margin-top: 1rem;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	max-width: max-content;
+	border: .1rem solid #482403;
+	background-color: #482403;
+    padding: 1.2rem 8.5rem;
+    overflow: hidden;
+	z-index: 1;
+	border-radius: .5rem;
+}
+
+.btns::before {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200%;
+	height: 200%;
+	border-radius: 50%;
+	background-color: #341d08;
+	transition: 500ms ease;
+	z-index: -1;
+}
+
+.btns .text {
+	transition: 250ms ease;
+}
+
+.btns .text-2 {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: scaleX(-50%);
+	min-width: max-content;
+	color: var(--secondary);
+}
+
+.btns:is(:hover, :focus-visible)::before {
+	bottom: -50%;
+}
+
+.btns:is(:hover, :focus-visible) .text-1 {
+	transform: translateY(-4rem);
+}
+
+.btns:is(:hover, :focus-visible) .text-2 {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.regi {
+    font-size: 1.5rem;
+	color: white;
+	cursor: pointer;
+    padding-left: 104px;
+}
+
+/* =========================================== FIM LOGIN WEBSITE =========================================== */
+
+/* =========================================== CADASTRO  WEBSITE =========================================== */
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #341d08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.left-login-image {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #41240a;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: white;
+    font-weight: 800;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > .senha1 {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #482403;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > .usuario1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.textfield > .usuario1::placeholder {
+    color: black;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white;
+    background-color: #341d08;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #482403;
+}
+
+.btn-login:hover {
+    background-color: #482403;
+}
+
+.task1 {
+    display: flex;
+    padding-right: 10px;
+    font-size: 15px;
+    padding-top: 7px;
+    color: white;
+    font-weight: 600;
+}
+
+.task1:hover{
+    color: #0077b6;
+}
+
+.task2:hover{
+    color: #0077b6;
+}
+
+.task2 {
+    display: flex;
+    font-size: 15px;
+    padding-top: 7px;
+    color: white;
+    font-weight: 600;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  }
+  
+  .popup {
+    background-color: #fff;
+    max-width: 1292px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    max-height: 576px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem interna quando necessário */
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .popup .close:hover {
+    color: #000;
+  }
+
+  .policy-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .policy-list {
+    list-style-type: decimal;
+    margin-left: 10px;
+    padding-left: 4px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .li1 {
+    font-family: 'Kanit', sans-serif;
+  }
+
+/* =========================================== FIM CADASTRO  WEBSITE =========================================== */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .popup-content {
+    text-align: center;
+ }
+ 
+ .icon-check {
+    font-size: 40px;
+    color: #27ae60;
+ }
+ 
+ .protocolo-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+ }
+ 
+ .protocolo-label {
+    margin-right: 5px;
+    margin-left: 144px;
+    margin-top: 22px;
+}
+ 
+ ul#motivo-cancelamento {
+    list-style-type: none;
+    padding: 0;
+ }
+ 
+ ul#motivo-cancelamento li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+ }
+ 
+ ul#motivo-cancelamento li:hover {
+    color: #27ae60;
+ }
+
+ .numero {
+    padding-top: 22px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #555;
+ }
+
+ .close-icon:hover {
+    color: #333;
+ }
+
+ .popup-content.contact {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+ }
+
+ .popup-content.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+ .popup-content.contact .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+
+.popup-content.contact .contact-info i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+
+ .popup-content.contact .cancel-message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+ }
+
+ .popup-content.contact .contact-info span {
+    display: inline-block;
+    vertical-align: middle;
+ }
+
+ .popup-content.contact .contact-info i,
+ .popup-content.contact .close-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #342f2f;
+    color: #fff;
+ }
+
+ .popup-content.contact .contact-info i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+ .popup-content.contact .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+ }
+/* =========================================== COMEÇO DO FOOTER  =========================================== */
+
+.footer {
+    background: #41240a;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer .box-container .box a {
+    font-size: 1.6rem;
+    display: block;
+    color: white;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: white;
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+    color: #0077b6;
+}
+
+.footer .share {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a {
+    color: white;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .share a:hover {
+    color: white;
+    background: var(--primary);
+    transform: rotate(360deg);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.footer .credit span {
+    color: var(--primary);
+}
+/* =========================================== FIM COMEÇO DO FOOTER  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  =========================================== media queries =========================================== */
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login {
+        width: 91%;
+        height: auto;
+    }
+    .right-login {
+        width: 91%;
+        height: auto;
+        padding-top: 17px
+    }
+    .left-login-image {
+        width: 50vw;
+        padding-top: 117px
+    }
+    .card-login {
+        width: 100%;
+        height: 94%;
+    }
+}
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: .5rem;
+        background: #41240a;
+    }
+
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content {
+        width: 50rem;
+    }
+
+    .review .review-slider {
+        width: 100%;
+        padding: 1rem;
+        padding-top: 15%;
+    }
+
+    input[type="text"] {
+        padding: -1px;
+        width: 101px;
+        background-color: #41240a;
+        color: white;
+    }
+    
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #482403;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: white;
+    }
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home .slide .content {
+        width: 30rem;
+    }
+
+    .home .slide .content h3 {
+        font-size: 3rem;
+    }
+
+}

@@ -441,25 +441,25 @@ input[class="texts"] {
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 20px;
-  }
+}
 
-  .close-button {
+.close-button {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-  }
+}
 
-  .pix {
+.pix {
     width: 91px;
     padding-top: 5px;
-  }
+}
 
 /* ========================================== BOLETO FAKE ===================================================*/
 
 
 
-  .fake-boleto {
+.fake-boleto {
     width: 600px;
     height: 300px;
     border: 1px solid #ccc;
@@ -467,17 +467,17 @@ input[class="texts"] {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-  }
+}
 
-  .boleto {
+.boleto {
     color: #0077b6;
-  }
+}
 
-  .boleto:hover {
+.boleto:hover {
     color: #0076b691;
-  }
+}
 
-  .ts {
+.ts {
     width: 527px;
     height: 235px;
 }

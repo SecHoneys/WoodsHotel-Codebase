@@ -47,7 +47,9 @@ function updateAmount() {
 
 function updateInstallments() {
   var hotelSelect = document.getElementById("hotel");
-  var installmentElements = document.querySelectorAll(".installments-table tbody tr td span");
+  var installmentElements = document.querySelectorAll(
+    ".installments-table tbody tr td span"
+  );
 
   var selectedOption = hotelSelect.value;
   var amount;
@@ -79,37 +81,38 @@ function updateInstallments() {
 // Chama a função inicialmente para exibir os valores das parcelas com base na opção selecionada
 updateInstallments();
 
-
 function toggleInstallments() {
-  var paymentMethod = document.querySelector('input[name="payment-method"]:checked').value;
-  var installmentsWrapper = document.getElementById('installments-wrapper');
-  var popup = document.getElementById('popup');
-  var fakeBoleto = document.getElementById('fake-boleto');
+  var paymentMethod = document.querySelector(
+    'input[name="payment-method"]:checked'
+  ).value;
+  var installmentsWrapper = document.getElementById("installments-wrapper");
+  var popup = document.getElementById("popup");
+  var fakeBoleto = document.getElementById("fake-boleto");
 
-  if (paymentMethod === 'boleto') {
-    installmentsWrapper.style.display = 'none';
-    fakeBoleto.style.display = 'block';
-    popup.style.display = 'none';
-  } else if (paymentMethod === 'pix') {
-    installmentsWrapper.style.display = 'none';
-    fakeBoleto.style.display = 'none';
-    popup.style.display = 'block';
+  if (paymentMethod === "boleto") {
+    installmentsWrapper.style.display = "none";
+    fakeBoleto.style.display = "block";
+    popup.style.display = "none";
+  } else if (paymentMethod === "pix") {
+    installmentsWrapper.style.display = "none";
+    fakeBoleto.style.display = "none";
+    popup.style.display = "block";
   } else {
-    installmentsWrapper.style.display = 'block';
-    fakeBoleto.style.display = 'none';
-    popup.style.display = 'none';
+    installmentsWrapper.style.display = "block";
+    fakeBoleto.style.display = "none";
+    popup.style.display = "none";
   }
 }
 
 function closePopup() {
-  var popup = document.getElementById('popup');
-  popup.style.display = 'none';
+  var popup = document.getElementById("popup");
+  popup.style.display = "none";
 }
 
 /// Cartão automatico os "."
 var cardInput = document.getElementById("card");
 
-cardInput.addEventListener("input", function() {
+cardInput.addEventListener("input", function () {
   var cardNumber = this.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
   var maxLength = 23; // Limite máximo de dígitos
 
@@ -133,9 +136,8 @@ function formatCardNumber(cardNumber) {
   return formattedNumber;
 }
 
-
 // Data de validade "25/25"
-document.getElementById("expiry").addEventListener("input", function() {
+document.getElementById("expiry").addEventListener("input", function () {
   let expiryDate = this.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
   let formattedDate = formatExpiryDate(expiryDate); // Formata a data de validade com a barra
 
@@ -153,7 +155,7 @@ function formatExpiryDate(expiryDate) {
   return formattedDate;
 }
 
-/// Valor Automatico 
+/// Valor Automatico
 
 function updateAmount() {
   var hotelSelect = document.getElementById("hotel");
