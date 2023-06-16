@@ -18,7 +18,7 @@
 <body>
     <!-- ============================ BARRA DE NAVEGAÇÃO ============================ -->
     <header class="header">
-        <a href="#" class="logo">Woody’s hotel</a>
+        <a href="../index.html" class="logo">Woody’s hotel</a>
 
         <nav class="navbar">
             <a href="../index.html">MENU</a>
@@ -62,12 +62,12 @@
           <label for="expiry">Data de Validade:</label>
           <input class="texts" type="text" id="expiry" placeholder="MM/AA" required>
           <label for="amount">Valor do Quarto:</label>
-          <input class="texts" type="text" id="amount" placeholder="Seleciona a modalidade" required readonly>
+          <input class="texts" type="text" id="amount" placeholder="Seleciona a modalidade" required oninput="updateBackground(); changeBackground()" readonly>
           <label for="checkout">Check-out:</label>
           <input class="texts" type="date" id="checkout" required>
           <label for="hotel">Modalidade de Quarto:</label>
           <select id="hotel" required onchange="updateAmount(); updateInstallments()">
-            <option value="#"></option>
+            <option value="vazio"></option>
             <option value="standard">Standard</option>
             <option value="deluxe">Deluxe</option>
             <option value="suite">Suite</option>

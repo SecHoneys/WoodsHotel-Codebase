@@ -164,9 +164,29 @@ function updateAmount() {
 
   if (selectedOption.value === "standard") {
     amountInput.value = "R$ 450";
+    amountInput.style.backgroundColor = "white";
   } else if (selectedOption.value === "deluxe") {
     amountInput.value = "R$ 980";
+    amountInput.style.backgroundColor = "white";
   } else if (selectedOption.value === "suite") {
     amountInput.value = "R$ 1300";
+    amountInput.style.backgroundColor = "white";
+  } else {
+    amountInput.value = "";
+    amountInput.style.backgroundColor = "#dedede";
   }
 }
+
+function changeBackground() {
+  var amountInput = document.getElementById("amount");
+
+  if (amountInput.value !== "") {
+    amountInput.style.backgroundColor = "white";
+  } else {
+    amountInput.style.backgroundColor = "black";
+  }
+}
+
+// Alterando o fundo para preto
+var amountInput = document.getElementById("amount");
+amountInput.style.backgroundColor = "#dedede";
