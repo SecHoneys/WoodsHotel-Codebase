@@ -299,60 +299,60 @@ form {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  h1 {
+h1 {
     text-align: center;
     margin-top: 0;
-  }
+}
 
-  label {
+label {
     display: block;
     margin-bottom: 0.5rem;
-  }
+}
 
-  input[class="texts"],
-  input[class="texts"],
-  select,
-  input[class="texts"] {
+input[class="texts"],
+input[class="texts"],
+select,
+input[class="texts"] {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 1rem;
     font-size: 1rem;
-  }
- 
-  .calendar {
+}
+
+.calendar {
     display: flex;
     flex-wrap: wrap;
     margin: -0.25rem;
-  }
+}
 
-  .calendar .day {
+.calendar .day {
     flex: 0 0 calc(100% / 7);
     padding: 0.25rem;
     text-align: center;
-  }
+}
 
-  .calendar .day input[type="checkbox"] {
+.calendar .day input[type="checkbox"] {
     display: none;
-  }
+}
 
-  .calendar .day input[type="checkbox"] + label {
+.calendar .day input[type="checkbox"]+label {
     display: block;
     padding: 0.25rem;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.875rem;
-  }
+}
 
-  .calendar .day input[type="checkbox"]:checked + label {
+.calendar .day input[type="checkbox"]:checked+label {
     background-color: #4caf50;
     color: #fff;
-  }
+}
 
-  .submit-button {
+.submit-button {
     width: 100%;
     padding: 0.75rem;
     border: none;
@@ -362,66 +362,125 @@ form {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  .submit-button:hover {
+.submit-button:hover {
     background-color: #45a049;
-  }
+}
 
-  .confirmation-code {
+.confirmation-code {
     margin-top: 1rem;
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f2f2f2;
     font-size: 1rem;
-  }
+}
 
-  .payment-methods {
+.payment-methods {
     margin-top: 1rem;
-  }
+}
 
-  .payment-methods label {
+.payment-methods label {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
     cursor: pointer;
-  }
+}
 
-  .payment-methods input[type="radio"] {
+.payment-methods input[type="radio"] {
     margin-right: 0.5rem;
-  }
+}
 
-  .installments-table {
+.installments-table {
     margin-top: 1rem;
     width: 100%;
     border-collapse: collapse;
-  }
+}
 
-  .installments-table th,
-  .installments-table td {
+.installments-table th,
+.installments-table td {
     padding: 0.5rem;
     text-align: center;
-  }
+}
 
-  .installments-table th {
+.installments-table th {
     background-color: #f2f2f2;
     font-weight: bold;
-  }
+}
 
-  .installments-table td {
+.installments-table td {
     border-bottom: 1px solid #ccc;
-  }
+}
 
-  .installments-wrapper {
+.installments-wrapper {
     display: none;
-  }
+}
 
-  .installments-wrapper.open {
+.installments-wrapper.open {
     display: block;
-  }
+}
 
 /* =========================================== FIM COMEÇO DE PAGAMENTO =========================================== */
+
+/* =========================================== SUA CHAVE PIX ==================================================*/
+
+.payment-methods {
+    margin-bottom: 20px;
+}
+
+.popup {
+    width: 300px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .pix {
+    width: 91px;
+    padding-top: 5px;
+  }
+
+/* ========================================== BOLETO FAKE ===================================================*/
+
+
+
+  .fake-boleto {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .boleto {
+    color: #0077b6;
+  }
+
+  .boleto:hover {
+    color: #0076b691;
+  }
+
+  .ts {
+    width: 527px;
+    height: 235px;
+}
 
 /* =========================================== COMEÇO DO FOOTER  =========================================== */
 
@@ -492,7 +551,9 @@ form {
     color: var(--primary);
 }
 
-/* =========================================== FIM COMEÇO DO FOOTER  
+/* =========================================== FIM COMEÇO DO FOOTER */
+
+
 
 
 
@@ -632,12 +693,12 @@ form {
     input[class="texts"],
     select,
     input[class="texts"] {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-bottom: 1rem;
-      font-size: 1rem;
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        font-size: 1rem;
     }
 
     .header .logo {

@@ -57,17 +57,16 @@
           <label for="card">Dados do Cartão:</label>
           <input class="texts" type="text" id="card" placeholder="Número do cartão" required>
           <label for="cvv">CVV:</label>
-          <input class="texts" type="text" id="cvv" placeholder="CVV" required>
+          <input class="texts" type="text" id="cvv" placeholder="código de segurança formado por três ou quatro dígitos que está presente nos cartões de crédito e débito" required>
           <label for="expiry">Data de Validade:</label>
           <input class="texts" type="text" id="expiry" placeholder="MM/AA" required>
           <label for="amount">Valor do Quarto:</label>
-          <input class="texts" type="number" id="amount" placeholder="Valor em R$" required>
-          <label for="checkin">Check-in:</label>
-          <input class="texts" type="date" id="checkin" required>
+          <input class="texts" type="text" id="amount" placeholder="Seleciona a modalidade" required readonly>
           <label for="checkout">Check-out:</label>
           <input class="texts" type="date" id="checkout" required>
           <label for="hotel">Modalidade de Quarto:</label>
-          <select id="hotel" required>
+          <select id="hotel" required onchange="updateAmount(); updateInstallments()">
+            <option value="#"></option>
             <option value="standard">Standard</option>
             <option value="deluxe">Deluxe</option>
             <option value="suite">Suite</option>
@@ -135,7 +134,7 @@
               Cartão de Crédito à Vista
             </label>
             <label>
-              <input type="radio" name="payment-method" value="debit-card" onchange="toggleInstallments()">
+              <input type="radio" name="payment-method" value="debit-card" onchange="">
               Débito
             </label>
             <label>
@@ -146,6 +145,20 @@
               <input type="radio" name="payment-method" value="pix" onchange="toggleInstallments()">
               PIX
             </label>
+          </div>
+
+          <div id="popup" class="popup" style="display: none;">
+            <h2>Chave PIX</h2>
+            <p>Aqui está a sua chave PIX:</p>
+            <p>Chave: 25252525</p>
+            <img class="pix" src="src/img/Pix/Pix.png" alt="QR Code PIX">
+            <span class="close-button" onclick="closePopup()">Fechar</span>
+          </div>
+        
+          <div id="fake-boleto" class="fake-boleto" style="display: none;">
+            <h2>Clicla para gerar seu boleto</h2>
+            <p><a class="boleto" href="https://shre.ink/lkNU" target="_blank">Aqui está o seu boleto falso</a></p>
+            <embed class="ts" src="src/img/Boleto/boleto.png" width="100%" height="100%" type='application/pdf'>
           </div>
     
           <input type="submit" class="submit-button" value="Confirmar Cobrança">
