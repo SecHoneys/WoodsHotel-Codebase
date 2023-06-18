@@ -21,8 +21,7 @@ O sistema oferece uma série de funcionalidades incríveis para facilitar a gest
 Fomos além do básico e utilizamos tecnologias modernas para criar uma experiência única. Confira as principais tecnologias envolvidas:
 
 - **Front-end Interativo:** Desenvolvemos a interface do usuário utilizando HTML5, CSS3 e JavaScript. Essas tecnologias permitem criar uma interface responsiva, atraente e altamente interativa.
-- **Armazenamento de Dados Eficiente:** Utilizamos um banco de dados SQLite para armazenar e gerenciar todas as informações relacionadas a reservas, quartos e hóspedes. O SQLite é conhecido por sua eficiência e confiabilidade.
-- **Arquitetura Cliente-Servidor:** Adotamos uma arquitetura cliente-servidor, onde o front-end é responsável pela interação com o usuário e o back-end lida com o processamento das solicitações e o acesso ao banco de dados.
+
 
 ## Como Executar o Projeto
 
