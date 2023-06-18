@@ -1,0 +1,216 @@
+   /* Estilos de Fonte */
+   body {
+    font-family: Arial, sans-serif;
+  }
+
+  h2 {
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  /* Estilos do Layout */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .cadastro {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .clientes {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label, input, select {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  ul {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+  }
+
+  li strong {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+  }
+
+  /* Ícones */
+  .fa-trash-alt {
+    color: #dc3545;
+    cursor: pointer;
+  }
+  .valor-quarto {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .valor-quarto input[type="radio"] {
+    display: none;
+  }
+  
+  .valor-quarto label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .valor-quarto input[type="radio"]:checked + label {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Estilos para os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilos para os rótulos */
+label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilos para os botões */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a lista de clientes */
+#listaClientes {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+#listaClientes li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para os campos de entrada */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilos para os rótulos */
+label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilos para os botões */
+.btn-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para a lista de clientes */
+#listaClientes {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+#listaClientes li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fa-trash-alt {
+  color: #ff0000;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+
+input[type="tel"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="tel"]:invalid {
+  border-color: red;
+}

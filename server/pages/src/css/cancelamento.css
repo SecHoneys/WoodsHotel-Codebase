@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 300px;
+  padding: 5px;
+}
+
+.form-textarea {
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #45a049;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.cancelled-rooms-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cancelled-rooms-table th, .cancelled-rooms-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.cancelled-rooms-table th {
+  background-color: #f2f2f2;
+}

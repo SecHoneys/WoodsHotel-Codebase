@@ -3,9 +3,9 @@ document.getElementById('manutencao').addEventListener('click', function() {
 });
 
 document.getElementById('cadastro').addEventListener('click', function() {
-    window.location.href = 'pages/caminho_da_pagina_de_cadastro.html';
+    window.location.href = 'pages/cadastro.html';
 });
 
 document.getElementById('cancelamento').addEventListener('click', function() {
-    window.location.href = 'pages/caminho_da_pagina_de_cancelamento.html';
+    window.location.href = 'pages/cancelamento.html';
 });
