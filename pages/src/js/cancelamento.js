@@ -84,3 +84,16 @@ function formatCPF(input) {
  
    input.value = cpf;
  }
+
+
+
+
+
+ document.getElementById("link-politicas").addEventListener("click", function(event) {
+   event.preventDefault();
+   document.getElementById("popups").style.display = "flex";
+ });
+ 
+ document.querySelector(".fechar-botao").addEventListener("click", function() {
+   document.getElementById("popups").style.display = "none";
+ });

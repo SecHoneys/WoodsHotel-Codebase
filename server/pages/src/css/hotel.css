@@ -1,0 +1,85 @@
+body {
+    background-color: #360e00;
+    text-align: center; 
+    align-content: center;
+    background-image: url(../../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 100px;
+    padding: auto;
+  }
+  header{
+    color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 50px;
+    position: relative;
+    font-size: 50px;
+  }
+  
+  .room1{
+    margin-top: 50px;
+    padding: 50px;
+    background-image: url(../../img/Quarto\ Clássico.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(196, 55, 0, 0.87);
+    font-weight: bolder;
+  }
+  
+  
+  .room2{
+    margin-top: 50px;
+    padding: 50px;
+    background-image: url(../../img/Quarto\ Deluxe.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #e9e9e9;
+  }
+  .room3{
+    margin-top: 50px;
+    padding: 50px;
+    background-image: url(../../img/Suíte\ Júnior.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .room4{
+    margin-top: 50px;
+    padding: 50px;
+    background-image: url(../../img/Suíte.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .room1, .room2, .room3, .room4{ 
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000000;
+    font-size: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight:900
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 126, 126, 0.5);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: #000000;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
