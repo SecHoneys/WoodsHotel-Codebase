@@ -1,5 +1,5 @@
 document.getElementById('manutencao').addEventListener('click', function() {
-    window.location.href = 'pages/hotel.html';
+    window.location.href = 'pages/Hotel.html';
 });
 
 document.getElementById('cadastro').addEventListener('click', function() {
