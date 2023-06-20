@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Relatório Financeiro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+      font-weight: normal;
+      text-align: left;
+      padding: 12px;
+    }
+    
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .total {
+      font-weight: bold;
+    }
+    
+    .subtotal-row {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    .total-row {
+      background-color: #d9edf7;
+      color: #31708f;
+      font-weight: bold;
+    }
+    
+    .negative-value {
+      color: #d9534f;
+    }
+
+    .download-link {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-link:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Relatório Financeiro</h1>
+  
+  <table>
+    <tr>
+      <th>DESCRIÇÃO</th>
+      <th>QTD</th>
+      <th>PREÇO UNITÁRIO</th>
+      <th>QUANTIDADE</th>
+    </tr>
+    <tr>
+      <td>Taxa de serviço</td>
+      <td>25</td>
+      <td>R$ 50,00</td>
+      <td>R$ 1.250,00</td>
+    </tr>
+    <tr>
+      <td>Salário / Funcionário</td>
+      <td>6</td>
+      <td class="negative-value">R$ -2.500,00</td>
+      <td class="negative-value">R$ -15.000,00</td>
+    </tr>
+    <tr>
+      <td>Aluguel Quarto Clássico / Dia</td>
+      <td>15</td>
+      <td>R$ 450,00</td>
+      <td>R$ 6.750,00</td>
+    </tr>
+    <tr>
+      <td>Aluguel Quarto Deluxe / Dia</td>
+      <td>21</td>
+      <td>R$ 980,00</td>
+      <td>R$ 20.580,00</td>
+    </tr>
+    <tr>
+      <td>Suíte Júnior / Dia</td>
+      <td>16</td>
+      <td>R$ 1.300,00</td>
+      <td>R$ 20.800,00</td>
+    </tr>
+    <tr>
+      <td>Aluguel Suíte / Dia</td>
+      <td>27</td>
+      <td>R$ 1.300,00</td>
+      <td>R$ 35.100,00</td>
+    </tr>
+    <tr>
+      <td>Despesas limpeza e cozinha</td>
+      <td></td>
+      <td></td>
+      <td class="negative-value">R$ -16.000,00</td>
+    </tr>
+    <tr>
+      <td>Despesas água/luz/internet/gás</td>
+      <td></td>
+      <td></td>
+      <td class="negative-value">R$ -23.000,00</td>
+    </tr>
+    <tr class="subtotal-row">
+      <td colspan="3">SUBTOTAL</td>
+      <td>R$ 30.480,00</td>
+    </tr>
+    <tr>
+      <td>TAXA DE IMPOSTO</td>
+      <td colspan="2">4,250%</td>
+      <td>R$ 1.295,40</td>
+    </tr>
+    <tr class="total-row">
+      <td colspan="3">TOTAL</td>
+      <td>R$ 31.775,40</td>
+    </tr>
+  </table>
+
+  <a href="../src/application/Fatura Hotel Woody`s .xlsx" class="download-link" download>Download do Relatório</a>
+
+  
+  <script>
+    // Colocar JS personalizado aqui, se necessário
+  </script>
+</body>
+</html>

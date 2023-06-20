@@ -8,12 +8,17 @@ body {
     margin: 100px;
     padding: auto;
   }
+
   header{
     color: rgb(0, 0, 0);
     padding: 0;
     margin: 50px;
     position: relative;
     font-size: 50px;
+  }
+
+  table {
+    margin-left: 129px;
   }
   
   .room1{

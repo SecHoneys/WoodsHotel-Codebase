@@ -9,3 +9,7 @@ document.getElementById('cadastro').addEventListener('click', function() {
 document.getElementById('cancelamento').addEventListener('click', function() {
     window.location.href = 'pages/cancelamento.html';
 });
+
+document.getElementById('relatorio').addEventListener('click', function() {
+    window.location.href = 'pages/relatorio.html';
+});

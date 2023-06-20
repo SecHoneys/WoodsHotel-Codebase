@@ -15,6 +15,9 @@ O sistema oferece uma série de funcionalidades incríveis para facilitar a gest
 - **Política e Privacidade:** O sistema fornece informações claras sobre a política de privacidade do hotel, garantindo a segurança e a confidencialidade dos dados dos usuários.
 - **Manutenção de Quartos:** Os funcionários do hotel podem registrar e acompanhar solicitações de manutenção dos quartos, garantindo que eles estejam sempre em perfeitas condições para os hóspedes.
 - **Responsivo para Celular:** A interface do sistema é responsiva, adaptando-se a diferentes tamanhos de tela e proporcionando uma experiência de usuário otimizada em dispositivos móveis.
+- **Relátorio de dispesas:** Neste relatório, apresentamos uma análise detalhada das despesas da empresa no último trimestre. Foram considerados todos os aspectos financeiros, como gastos com fornecedores, custos operacionais, despesas com pessoal, entre outros. O objetivo é identificar áreas de maior impacto financeiro e propor medidas para otimizar os recursos e reduzir custos desnecessários. Com base nos dados levantados, poderemos tomar decisões mais informadas e estratégicas para melhorar a saúde financeira da empresa e garantir sua sustentabilidade a longo prazo.
+- **Informação de quarto** Utilizamos mais CSS3 - HTML5 o website não se econtra-se responsivo nessa parte utilizamos icon dentre outros.
+
 
 ## Tecnologias Utilizadas
 
